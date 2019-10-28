@@ -1,0 +1,10 @@
+com\wq\controller\BaseController.class
+com\wq\util\SpringContextUtil.class
+com\wq\controller\WebController.class
+com\wq\task\TimerJob.class
+com\wq\user\dao\impl\WqUserDaoImpl.class
+com\wq\user\controller\UserController.class
+com\wq\user\model\WqUser.class
+com\wq\util\QrcodeUtil.class
+com\wq\user\dao\WqUserDao.class
+com\wq\util\SetProperties.class
