@@ -2,6 +2,7 @@ package com.wentry.netty.spi;
 
 import java.net.InetSocketAddress;
 
+import com.wentry.netty.codec.Decoder;
 import com.wentry.netty.handle.EchoServerBaseHandler;
 
 import io.netty.bootstrap.ServerBootstrap;
@@ -19,10 +20,11 @@ public class ProcesserBootstrapper
      * 2.EventLoop--->控制流、多线程处理、并发
      * 3.ChannelFuture--->异步通知
      */
-    
+
     public void start(final String host,final int port){
         //创建事件处理
         final EchoServerBaseHandler handler = new EchoServerBaseHandler();
+        Decoder decoder = new Decoder();
         //创建EventLoopGroup
         EventLoopGroup boss_group = new NioEventLoopGroup();
         EventLoopGroup work_group = new NioEventLoopGroup();
@@ -38,21 +40,27 @@ public class ProcesserBootstrapper
                     protected void initChannel(SocketChannel ch)
                         throws Exception
                     {
-                        ch.pipeline().addLast("echoServerHandler", handler);
+                        ch.pipeline()
+                                .addLast("decoder",decoder)
+                                .addLast("echoServerHandler", handler);
                     }
                 });
         try
         {
             ChannelFuture f = bootstrap.bind(host, port);
             //异步地绑定服务器
-            f.sync();       
+            f.sync();
         }
         catch (InterruptedException e)
         {
             e.printStackTrace();
         }finally{
-            boss_group.shutdownGracefully();
-            work_group.shutdownGracefully();
+            // Bind a shutdown hook
+            Runtime.getRuntime().addShutdownHook(new Thread(()-> {
+                    boss_group.shutdownGracefully();
+                    work_group.shutdownGracefully();
+            })
+            );
         }
     }
 }

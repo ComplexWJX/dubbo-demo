@@ -25,6 +25,6 @@
 		<property name="properties" ref="configProperties" />
 	</bean> -->
 
-	<context:component-scan base-package="com.wq,com.wentry,com.wq.service"></context:component-scan>
+	<context:component-scan base-package="com.wq,com.wentry"></context:component-scan>
 	<mvc:annotation-driven></mvc:annotation-driven>
 </beans>
