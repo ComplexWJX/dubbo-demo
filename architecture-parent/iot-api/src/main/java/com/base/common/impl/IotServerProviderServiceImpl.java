@@ -12,14 +12,14 @@ import com.base.common.IotServerProviderService;
 public class IotServerProviderServiceImpl implements IotServerProviderService
 {
     private  String classname = "com.wq.dubboprovider.impl.IotServiceImpl";
-    
+
     private static Logger LOG = LoggerFactory.getLogger(IotServerProviderService.class);
-    
+
     @Override
     public Object process(String methodId,Map<String, String> param)
     {
         // TODO 此处实现真正业务
-        
+
         //LOG.info("当前调用接口方法:{}", methodId);
         System.out.println("当前调用接口方法:{}"+ methodId);
         Object result = null;
@@ -36,5 +36,10 @@ public class IotServerProviderServiceImpl implements IotServerProviderService
         }
         return result;
     }
-    
+
+    @Override
+    public Object callback() {
+        return null;
+    }
+
 }
