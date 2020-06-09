@@ -78,14 +78,6 @@
 		  <artifactId>mockito-core</artifactId>
 		  <version>1.9.0</version>
 	  </dependency>
-
-	  <dependency>
-		  <groupId>com.asiainfo</groupId>
-		  <artifactId>swetake</artifactId>
-		  <version>1.0</version>
-		  <scope>system</scope>
-		  <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/Qrcode.jar</systemPath>
-	  </dependency>
   </dependencies>
   <build>
     <finalName>iot-server</finalName>

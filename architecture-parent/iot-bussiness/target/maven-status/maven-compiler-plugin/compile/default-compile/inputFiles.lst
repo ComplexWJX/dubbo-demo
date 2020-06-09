@@ -1,10 +1,10 @@
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\util\SetProperties.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\user\controller\UserController.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\controller\BaseController.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\user\dao\WqUserDao.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\user\model\WqUser.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\task\TimerJob.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\util\QrcodeUtil.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\user\dao\impl\WqUserDaoImpl.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\controller\WebController.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-bussiness\src\main\java\com\wq\util\SpringContextUtil.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\util\SpringContextUtil.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\user\dao\WqUserDao.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\user\controller\UserController.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\controller\WebController.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\util\QrcodeUtil.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\user\dao\impl\WqUserDaoImpl.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\util\SetProperties.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\controller\BaseController.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\user\model\WqUser.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-bussiness\src\main\java\com\wq\task\TimerJob.java

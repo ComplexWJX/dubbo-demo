@@ -1,20 +1,21 @@
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\util\SetProperties.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\controller\BaseController.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wentry\netty\spi\ProcesserBootstrapper.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\service\impl\IRemoteServerServiceImpl.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wentry\natrual\client\Client.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wentry\netty\handle\EchoServerBaseHandler.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\util\QrcodeUtil.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\controller\WebController.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\user\dao\WqUserDao.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\user\controller\UserController.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wentry\natrual\client\PushClient.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\dubboprovider\impl\IotServiceImpl.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wentry\netty\server\EchoServer.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wentry\natrual\server\Server.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\user\model\WqUser.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\user\dao\impl\WqUserDaoImpl.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\dubboprovider\IotServerService.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wentry\natrual\server\InitServer.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wentry\listen\WebListener.java
-E:\git req\my_issue\iot-api\architecture-parent\iot-server\src\main\java\com\wq\service\IRemoteServerService.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\user\dao\WqUserDao.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\controller\BaseController.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\service\impl\IRemoteServerServiceImpl.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\util\SetProperties.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\natrual\client\Client.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\netty\spi\ProcesserBootstrapper.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\natrual\server\Server.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\netty\server\EchoServer.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\natrual\client\PushClient.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\netty\handle\EchoServerBaseHandler.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\listener\WebListener.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\controller\WebController.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\dubboprovider\impl\IotServiceImpl.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\service\IRemoteServerService.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\user\controller\UserController.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\dubboprovider\IotServerService.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\user\dao\impl\WqUserDaoImpl.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\user\model\WqUser.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wq\util\QrcodeUtil.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\netty\codec\Decoder.java
+E:\git_req\my_issue\dubbo-demo\architecture-parent\iot-server\src\main\java\com\wentry\natrual\server\InitServer.java

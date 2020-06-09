@@ -7,7 +7,6 @@
     <artifactId>architecture-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.wq</groupId>
   <artifactId>iot-bussiness</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
