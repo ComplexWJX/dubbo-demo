@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import com.wentry.netty.codec.Decoder;
 import com.wentry.netty.handle.EchoServerBaseHandler;
 
+import com.wentry.netty.handle.SimpleDuplexHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -33,8 +34,9 @@ public class ProcessorBootstrapper {
 
     public void start(final String host,final int port){
         //创建事件处理
-        final EchoServerBaseHandler handler = new EchoServerBaseHandler();
+        EchoServerBaseHandler handler = new EchoServerBaseHandler();
         Decoder decoder = new Decoder();
+        SimpleDuplexHandler duplexHandler = new SimpleDuplexHandler();
         //创建EventLoopGroup
         EventLoopGroup boss_group = new NioEventLoopGroup();
         EventLoopGroup work_group = new NioEventLoopGroup();
@@ -54,7 +56,8 @@ public class ProcessorBootstrapper {
 //                                .addLast("decoder",decoder)
                                 .addLast(new HttpServerCodec())//http服务解码
                                 .addLast(new HttpObjectAggregator(2048))
-                                .addLast("echoServerHandler", handler);
+                                .addLast("echoServerHandler", handler)
+                                .addLast("duplexHandler",duplexHandler);
                     }
                 }).childOption(ChannelOption.SO_KEEPALIVE,true);
         try

@@ -1,0 +1,37 @@
+package com.wentry.netty.handle;
+
+import io.netty.channel.ChannelDuplexHandler;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelPromise;
+
+/**
+ * @author WJX
+ * @title: SimpleDuplexHanlder
+ * @projectName architecture-parent
+ * @description: TODO
+ * @date 2020/6/10 0010
+ */
+public class SimpleDuplexHandler extends ChannelDuplexHandler {
+
+    @Override
+    public void close(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
+        super.close(ctx, promise);
+    }
+
+    @Override
+    public void read(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("outbound read.");
+        super.read(ctx);
+    }
+
+    @Override
+    public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+        System.out.println("outbound write.");
+        super.write(ctx, msg, promise);
+    }
+
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        super.channelInactive(ctx);
+    }
+}
