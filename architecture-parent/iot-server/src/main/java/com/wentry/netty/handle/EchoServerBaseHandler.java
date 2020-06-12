@@ -1,6 +1,7 @@
 package com.wentry.netty.handle;
 
 import io.netty.buffer.Unpooled;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.*;
@@ -8,8 +9,8 @@ import io.netty.util.AttributeKey;
 
 import java.nio.charset.StandardCharsets;
 
-public class EchoServerBaseHandler extends ChannelInboundHandlerAdapter
-{
+@ChannelHandler.Sharable
+public class EchoServerBaseHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx)
         throws Exception

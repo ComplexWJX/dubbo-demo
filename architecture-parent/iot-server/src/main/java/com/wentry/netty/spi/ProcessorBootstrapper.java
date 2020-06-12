@@ -74,7 +74,7 @@ public class ProcessorBootstrapper {
             Runtime.getRuntime().addShutdownHook(new Thread(()-> {
                 Future<?> bossWaiter = boss_group.shutdownGracefully();
                 Future<?> workerWaiter = work_group.shutdownGracefully();
-                System.out.println("系统关闭");
+                logger.info("系统关闭");
                 logger.info("Waiting for worker and boss event loop groups to terminate...");
                 try {
                     workerWaiter.await(10, TimeUnit.SECONDS);
@@ -85,7 +85,5 @@ public class ProcessorBootstrapper {
                     })
             );
         }
-
-        System.out.println("系统启动...");
     }
 }

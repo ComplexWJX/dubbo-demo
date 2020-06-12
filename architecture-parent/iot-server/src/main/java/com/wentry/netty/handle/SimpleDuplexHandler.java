@@ -1,8 +1,11 @@
 package com.wentry.netty.handle;
 
 import io.netty.channel.ChannelDuplexHandler;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPromise;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author WJX
@@ -11,6 +14,7 @@ import io.netty.channel.ChannelPromise;
  * @description: TODO
  * @date 2020/6/10 0010
  */
+@ChannelHandler.Sharable
 public class SimpleDuplexHandler extends ChannelDuplexHandler {
 
     @Override
@@ -26,12 +30,20 @@ public class SimpleDuplexHandler extends ChannelDuplexHandler {
 
     @Override
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
-        System.out.println("outbound write.");
+        System.out.println("outbound write:"+msg);
         super.write(ctx, msg, promise);
     }
 
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         super.channelInactive(ctx);
+    }
+
+    @Override
+    public void handlerAdded(final ChannelHandlerContext ctx) {
+        ctx.executor().schedule(() -> {
+            ctx.channel().write("hello netty");
+            ctx.write("hello world");
+        }, 3, TimeUnit.SECONDS);
     }
 }
